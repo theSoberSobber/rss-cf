@@ -1,0 +1,14 @@
+{
+  "name": "rss-cf",
+  "version": "1.0.0",
+  "description": "RSS Feed to monitor CF submissions of an array of handles",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
