@@ -1,11 +1,12 @@
-const express = require("express");
+import express from "npm:express@4.18.2";
+import { make } from "./parser.js"
 const app = express();
 
-app.listen(process.env.PORT || 7000);
+app.listen(7000);
 
 // _____________________________________
 let xml_res;
-(async () => {xml_res = await require('./parser.js')();/*console.log(xml_res);*/})();
+(async () => {xml_res = await make();/*console.log(xml_res);*/})();
 
 // _____________________________________
 
